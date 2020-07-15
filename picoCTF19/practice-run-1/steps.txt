@@ -1,0 +1,6 @@
+steps.txt
+
+
+just direct to the location and run the highlighted file to get the flag simple 
+
+picoCTF{g3t_r3adY_2_r3v3r53}

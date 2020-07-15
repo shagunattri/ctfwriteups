@@ -1,0 +1,8 @@
+just use grep or the exiftool to look for the flag 
+
+with 
+
+strings pico_inage.png | grep pico
+
+flag 
+picoCTF{s0_m3ta_ffd09c0f}

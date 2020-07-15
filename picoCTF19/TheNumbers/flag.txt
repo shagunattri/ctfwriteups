@@ -1,0 +1,3 @@
+Run a simple python script decipher 
+
+picoCTF{PICOCTFTHENUMBCRSMASON}

@@ -1,0 +1,5 @@
+decoded keywords for base64b key as in the challenge name
+
+l3arn_th3_r0p35
+
+flag picoCTF{l3arn_th3_r0p35}

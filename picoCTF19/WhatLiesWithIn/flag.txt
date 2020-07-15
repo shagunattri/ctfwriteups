@@ -1,0 +1,10 @@
+steganography challenge witha twis unlie the other ones where 
+http://stylesuxx.github.io/steganography/
+
+
+
+refer for info and decoder online for the flag
+https://github.com/stylesuxx/steganography
+
+flag picoCTF{h1d1ng_1n_th3_b1t5}
+

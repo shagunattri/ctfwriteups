@@ -1,0 +1,5 @@
+redirect to the location of the file and use the grep command
+
+cat file | grep picoCTF
+
+picoCTF{grep_is_good_to_find_things_cdb327ab}

@@ -1,0 +1,3 @@
+just decode the flags with PICOCTF{}
+
+and refer the maritime flags decoder to refer to the values 
