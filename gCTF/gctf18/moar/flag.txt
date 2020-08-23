@@ -1,0 +1,3 @@
+use ! for rce and cat out the flag from the netcat connection
+
+CTF{SOmething-CATastr0phic}

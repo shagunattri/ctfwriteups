@@ -1,0 +1,26 @@
+download png
+
+to OCR the file enlarge it using `convert` from the ImageMagick suite
+
+```bash
+ convert OCR.png -scale 300% op.png
+```
+
+tesseract op.png output
+
+To get the ocr output in the file called `output.txt`
+
+
+
+ rot13 uses bsd-games and decrypt caesar ciphers
+
+cat output.txt | rot13
+
+cat output.txt | caesar 1
+
+cat output.txt | caesar 2
+
+for i in {0..26}; do echo $1###########################; cat output.txt | caeser $i | less
+#iterate against caesar ciphers 1---26;
+
+caesar 7 is the flag
