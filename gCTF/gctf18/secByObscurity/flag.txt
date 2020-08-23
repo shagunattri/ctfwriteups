@@ -1,0 +1,5 @@
+title says it all 
+
+we have to find out flag unzipping variours formats and finally bruteforce password with fcrackzip
+
+CTF{CompressionIsNotEncryption}

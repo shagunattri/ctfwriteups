@@ -1,0 +1,4 @@
+strings the executables 
+
+disassemble it try the weird strings as username and password to get flag
+
