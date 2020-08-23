@@ -1,0 +1,3 @@
+ use dosbox and the debugger to debug www.com and dump memory of the flag
+
+CTF{g00do1dDOS-FTW}
