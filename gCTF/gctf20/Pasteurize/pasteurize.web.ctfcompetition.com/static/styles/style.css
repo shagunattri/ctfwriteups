@@ -1,0 +1,9 @@
+
+#note-content{
+    overflow-x: auto;
+    word-wrap: break-word;
+}
+
+#alert-container{
+    display: none
+}
