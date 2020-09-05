@@ -102,4 +102,3 @@ which module is used with buffer overflow and ROP attacks?
 Not every module is loaded in by default, what command can we use to load different modules?
 >load
     load          Load a framework plugin
-
