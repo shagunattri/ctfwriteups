@@ -41,17 +41,42 @@ GPS Position                    : 54 deg 17' 41.27" N, 2 deg 15' 1.33" W
 
 
 What is this users avatar of?
-- Copyright info gives us the twitter page of the user and has cat as avatar so `cat`
+
+Copyright info gives us the twitter page of the user and has cat as avatar so 
+
+`cat`
+
 What city is this person in?
-- use the BSSID and figure out the location using wiggle.net `London`
+
+use the BSSID and figure out the location using wiggle.net 
+
+`London`
+
 Whats the SSID of the WAP he connected to?
-- Map shows the wifi connected to `UnileverWi<redacted>`
+
+Map shows the wifi connected to 
+
+`UnileverWi<redacted>`
+
 What is his personal email address?
-- Look at the Github readme `OWoodflint@<redacted>`
+
+Look at the Github readme 
+
+`OWoodflint@<redacted>`
+
 What site did you find his email address on?
-- Github
+
+`Github`
+
 Where has he gone on holiday?
-- Check out the blog `New York`
+
+Check out the blog 
+
+`New York`
+
 What is this persons password?
-- Check out the blog once again `pennYDr0pp<redacted>`
+
+Check out the blog once again 
+
+`pennYDr0pp<redacted>`
 
