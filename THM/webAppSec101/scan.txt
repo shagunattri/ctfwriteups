@@ -1,0 +1,43 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-10 16:12 IST
+Stats: 0:00:31 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.26% done; ETC: 16:12 (0:00:00 remaining)
+Nmap scan report for 10.10.242.249
+Host is up (0.21s latency).
+Not shown: 987 closed ports
+PORT      STATE    SERVICE     VERSION
+22/tcp    open     ssh         OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 9a:41:18:e1:3c:78:42:44:8a:ad:cc:14:0f:ed:f8:0a (RSA)
+|   256 3f:bb:fe:52:57:2d:44:8e:86:23:87:1a:9e:60:e8:cc (ECDSA)
+|_  256 11:40:72:f3:66:63:14:bc:b5:98:bc:83:b4:7a:4a:a0 (ED25519)
+80/tcp    open     http        Apache httpd 2.4.7 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: WackoPicko.com
+111/tcp   open     rpcbind     2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          41239/tcp6  status
+|   100024  1          44615/tcp   status
+|   100024  1          51634/udp6  status
+|_  100024  1          53493/udp   status
+1042/tcp  filtered afrog
+1093/tcp  filtered proofd
+1322/tcp  filtered novation
+1947/tcp  filtered sentinelsrm
+2401/tcp  filtered cvspserver
+5555/tcp  filtered freeciv
+9080/tcp  filtered glrpc
+15003/tcp filtered unknown
+49165/tcp filtered unknown
+51103/tcp filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 35.65 seconds
