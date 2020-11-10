@@ -1,0 +1,68 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-09 21:45 IST
+Verbosity Increased to 1.
+Completed Service scan at 21:45, 6.41s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 10.10.92.167
+Retrying OS detection (try #2) against 10.10.92.167
+Retrying OS detection (try #3) against 10.10.92.167
+Retrying OS detection (try #4) against 10.10.92.167
+Retrying OS detection (try #5) against 10.10.92.167
+Initiating Traceroute at 21:45
+Completed Traceroute at 21:45, 0.26s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 21:45
+Completed Parallel DNS resolution of 2 hosts. at 21:45, 0.07s elapsed
+NSE: Script scanning 10.10.92.167.
+Initiating NSE at 21:45
+Completed NSE at 21:45, 5.83s elapsed
+Initiating NSE at 21:45
+Completed NSE at 21:45, 0.77s elapsed
+Initiating NSE at 21:45
+Completed NSE at 21:45, 0.00s elapsed
+Nmap scan report for 10.10.92.167
+Host is up (0.19s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 74:e0:e1:b4:05:85:6a:15:68:7e:16:da:f2:c7:6b:ee (RSA)
+|   256 bd:43:62:b9:a1:86:51:36:f8:c7:df:f9:0f:63:8f:a3 (ECDSA)
+|_  256 f9:e7:da:07:8f:10:af:97:0b:32:87:c9:32:d7:1b:76 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Smag
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=11/9%OT=22%CT=1%CU=40657%PV=Y%DS=2%DC=T%G=Y%TM=5FA96B3
+OS:E%P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%CI=I%II=I%TS=8)OPS
+OS:(O1=M508ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST1
+OS:1NW6%O6=M508ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN
+OS:(R=Y%DF=Y%T=40%W=6903%O=M508NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Uptime guess: 0.008 days (since Mon Nov  9 21:33:53 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT       ADDRESS
+1   264.50 ms 10.8.0.1
+2   264.65 ms 10.10.92.167
+
+NSE: Script Post-scanning.
+Initiating NSE at 21:45
+Completed NSE at 21:45, 0.00s elapsed
+Initiating NSE at 21:45
+Completed NSE at 21:45, 0.00s elapsed
+Initiating NSE at 21:45
+Completed NSE at 21:45, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 42.14 seconds
+           Raw packets sent: 1511 (70.526KB) | Rcvd: 1399 (59.450KB)
