@@ -1,0 +1,62 @@
+# Nmap 7.80 scan initiated Sun Jan  3 18:06:00 2021 as: nmap -sC -sV -T4 -A -oN relevant -Pn 10.10.231.240
+Nmap scan report for 10.10.231.240
+Host is up (0.23s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE        VERSION
+80/tcp   open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+135/tcp  open  msrpc          Microsoft Windows RPC
+139/tcp  open  netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds   Windows Server 2016 Standard Evaluation 14393 microsoft-ds
+3389/tcp open  ms-wbt-server?
+| rdp-ntlm-info: 
+|   Target_Name: RELEVANT
+|   NetBIOS_Domain_Name: RELEVANT
+|   NetBIOS_Computer_Name: RELEVANT
+|   DNS_Domain_Name: Relevant
+|   DNS_Computer_Name: Relevant
+|   Product_Version: 10.0.14393
+|_  System_Time: 2021-01-03T12:38:10+00:00
+| ssl-cert: Subject: commonName=Relevant
+| Not valid before: 2021-01-02T12:34:26
+|_Not valid after:  2021-07-04T12:34:26
+|_ssl-date: 2021-01-03T12:38:49+00:00; 0s from scanner time.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2016|2012|2008|10 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_server_2012 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_10:1607
+Aggressive OS guesses: Microsoft Windows Server 2016 (91%), Microsoft Windows Server 2012 (85%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2008 R2 (85%), Microsoft Windows 10 1607 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h36m00s, deviation: 3h34m40s, median: 0s
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard Evaluation 14393 (Windows Server 2016 Standard Evaluation 6.3)
+|   Computer name: Relevant
+|   NetBIOS computer name: RELEVANT\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-01-03T04:38:10-08:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-01-03T12:38:13
+|_  start_date: 2021-01-03T12:35:05
+
+TRACEROUTE (using port 139/tcp)
+HOP RTT       ADDRESS
+1   241.59 ms 10.8.0.1
+2   243.08 ms 10.10.231.240
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan  3 18:08:50 2021 -- 1 IP address (1 host up) scanned in 169.81 seconds
