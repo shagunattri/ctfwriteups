@@ -1,0 +1,37 @@
+# Nmap 7.80 scan initiated Fri Feb 19 17:42:08 2021 as: nmap -sC -sV -A -T4 --script=vuln -oA scanres -vvv 35.160.84.110
+Nmap scan report for 35.160.84.110
+Host is up, received syn-ack (0.30s latency).
+Scanned at 2021-02-19 17:42:19 IST for 71s
+Not shown: 997 filtered ports
+Reason: 997 no-responses
+PORT     STATE  SERVICE    REASON       VERSION
+22/tcp   open   ssh        syn-ack      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.2p1: 
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062
+|_    	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+80/tcp   open   http       syn-ack      Apache httpd 2.4.41 ((Ubuntu))
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.41: 
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|_    	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+8080/tcp closed http-proxy conn-refused
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 19 17:43:30 2021 -- 1 IP address (1 host up) scanned in 82.54 seconds
