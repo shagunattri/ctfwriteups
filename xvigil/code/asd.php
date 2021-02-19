@@ -8,3 +8,6 @@ function contains_substring($str1 , $str2) {
             include $page;
     }
 ?>
+
+
+<!-- The strpos() function finds the position of the first occurrence of a string inside another string. -->
