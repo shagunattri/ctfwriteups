@@ -206,3 +206,32 @@ As mentioned earlier, TCP is a connection-based protocol. In other words, before
 When you attempt to make a connection, your computer first sends a special request to the remote server indicating that it wants to initialise a connection. This request contains something called a SYN (short for synchronise) bit, which essentially makes first contact in starting the connection process. The server will then respond with a packet containing the SYN bit, as well as another "acknowledgement" bit, called ACK. Finally, your computer will send a packet that contains the ACK bit by itself, confirming that the connection has been setup successfully. With the three-way handshake successfully completed, data can be reliably transmitted between the two computers. Any data that is lost or corrupted on transmission is re-sent, thus leading to a connection which appears to be lossless.
 
 ![synack](https://muirlandoracle.co.uk/wp-content/uploads/2020/03/image-2.png)
+
+
+
+_Network Services_
+
+### Understanding SMB
+
+SMB - Server Message Block Protocol - is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network.
+
+https://searchnetworking.techtarget.com/definition/Server-Message-Block-Protocol
+
+Servers make file systems and other resources (printers, named pipes, APIs) available to clients on the network. Client computers may have their own hard disks, but they also want access to the shared file systems and printers on the servers.
+
+The SMB protocol is known as a response-request protocol, meaning that it transmits multiple messages between the client and server to establish a connection. Clients connect to servers using TCP/IP (actually NetBIOS over TCP/IP as specified in RFC1001 and RFC1002), NetBEUI or IPX/SPX.
+
+![smb](https://i.imgur.com/XMnru12.png)
+
+Once they have established a connection, clients can then send commands (SMBs) to the server that allow them to access shares, open files, read and write files, and generally do all the sort of things that you want to do with a file system. However, in the case of SMB, these things are done over the network.
+
+_What runs SMB?_
+
+Microsoft Windows operating systems since Windows 95 have included client and server SMB protocol support. Samba, an open source server that supports the SMB protocol, was released for Unix systems.
+
+_QnA's_
+
+- What does SMB stand for? `Server Message Block`
+- What type of protocol is SMB? `response-resquest`
+- What do clients connect to servers using? `NETBIOS over TCP/IP`
+- What systems does Samba run on? `Unix`
