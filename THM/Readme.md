@@ -1,5 +1,13 @@
 ### Resources from THM👨‍💻
 
+### Further Learning:
+
+https://medium.com/@gregIT/exploiting-simple-network-services-in-ctfs-ec8735be5eef
+
+https://attack.mitre.org/techniques/T1210/
+
+https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/
+
 ### Steganography
 - https://0xrick.github.io/lists/stego/
 
@@ -95,6 +103,20 @@ _grep_
 
 _ps_
 - To view a list of all system processes, you have to use the `-ef` flag
+
+_hydra_
+
+- `"hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp"`
+
+```
+hydra                   Runs the hydra tool
+-t 4                    Number of parallel connections per target
+-l [user]               Points to the user who's account you're trying to compromise
+-P [path to dictionary] Points to the file containing the list of possible passwords
+-vV                     Sets verbose mode to very verbose, shows the login+pass combination for each attempt
+[machine IP]            The IP address of the target machine
+ftp / protocol          Sets the protocol
+```
 
 ### Networking
 
@@ -235,3 +257,62 @@ _QnA's_
 - What type of protocol is SMB? `response-resquest`
 - What do clients connect to servers using? `NETBIOS over TCP/IP`
 - What systems does Samba run on? `Unix`
+
+
+###  Understanding Telnet
+
+_What is Telnet?_
+
+Telnet is an `application protocol` which allows you, with the use of a telnet client, to connect to and execute commands on a remote machine that's hosting a telnet server.
+
+The telnet client will establish a connection with the server. The client will then become a virtual terminal- allowing you to interact with the remote host.
+
+_Replacement_
+
+Telnet sends all messages in clear text and has no specific security mechanisms. Thus, in many applications and services, Telnet has been replaced by SSH in most implementations.
+ 
+_How does Telnet work?_
+
+The user connects to the server by using the Telnet protocol, which means entering "telnet" into a command prompt. The user then executes commands on the server by using specific Telnet commands in the Telnet prompt. You can connect to a telnet server with the following syntax: `"telnet [ip] [port]"`
+
+Telnet, being a protocol, is in and of itself insecure for the reasons we talked about earlier. It lacks encryption, so sends all communication over plaintext, and for the most part has poor access control.
+
+
+### Understanding FTP
+
+_What is FTP?_
+
+File Transfer Protocol (FTP) is, as the name suggests , a protocol used to allow remote transfer of files over a network. It uses a client-server model to do this, and- as we'll come on to later- relays commands and data in a very efficient way.
+
+_How does FTP work?_
+A typical FTP session operates using two channels:
+
+- a command (sometimes called the control) channel
+- a data channel. 
+
+As their names imply, the command channel is used for transmitting commands as well as replies to those commands, while the data channel is used for transferring data.
+
+FTP operates using a client-server protocol. The client initiates a connection with the server, the server validates whatever login credentials are provided and then opens the session.
+
+While the session is open, the client may execute FTP commands on the server.
+
+_Active vs Passive_
+
+The FTP server may support either Active or Passive connections, or both. 
+
+- In an Active FTP connection, the client opens a port and listens. The server is required to actively connect to it. 
+- In a Passive FTP connection, the server opens a port and listens (passively) and the client connects to it.  
+
+This separation of command information and data into separate channels is a way of being able to send commands to the server without having to wait for the current data transfer to finish. If both channels were interlinked, you could only enter commands in between data transfers, which wouldn't be efficient for either large file transfers, or slow internet connections.
+
+_More Details:_
+
+You can find more details on the technical function, and implementation of, FTP on the Internet Engineering Task Force website: https://www.ietf.org/rfc/rfc959.txt. The IETF is one of a number of standards agencies, who define and regulate internet standards.
+
+
+```bash
+In order to run commands once authenticated we will have to switch to passive mode by running:
+
+ftp> pass
+
+```
